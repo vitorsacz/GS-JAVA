@@ -4,25 +4,30 @@ import javax.swing.JOptionPane;
 
 public class Functions {
 	
-
+	//MÉTODO PARA RECEBER UMA STRING
 	public static String texto(String j) {
 		return JOptionPane.showInputDialog(j);
 	}
 	
+	//MÉTODO PARA RECEBER UM NUMERO INTEIRO ()
 	public static int inteiro(String j) {
 		return Integer.parseInt(JOptionPane.showInputDialog(j));
 	}
 	
+	//MÉTODO PARA RECEBER UM NUMERO REAL
 	public static Double real(String j) {
 		return Double.parseDouble(JOptionPane.showInputDialog(j));
 	}
 	
+	
+	//MÉTODO PULA LINHA
 	public void pula(int tamanho) {
 		   for(int y=1; y<=tamanho; y++){
 			   System.out.print("\n");
 			}	
 		}
 			
+	//MÉTODO PARA CRIAR UMA LINHA DE DIVISÃO
 	public void linha(int tamanho) {
 		pula(1);
 		for(int y=1; y<=tamanho; y++){
@@ -31,6 +36,8 @@ public class Functions {
 			pula(1);
 	}
 	
+	
+	//MÉTODO PARA EXIBIR O SLOGAN DO PROJETO
 	public void slogan() {
 		
 		this.linha(60);
@@ -40,6 +47,8 @@ public class Functions {
 		this.linha(60);
 	}
 	
+	
+	//MÉTODO PARA EXIBIR AS OPCOES DE PERFIL DO USUARIO
 	public void perfil() {
 		System.out.println("QUAL O SEU PERFIL?");
 		this.pula(1);
@@ -48,6 +57,8 @@ public class Functions {
 		
 	}
 	
+	
+	//MÉTODO PARA EXIBIR AS OPCOES DE MENU DO MEDICO
 	public void menuMedico() {
 		this.linha(50);
 		System.out.println("O QUE DESEJA REALIZAR? ");
@@ -61,6 +72,8 @@ public class Functions {
 		
 	}
 	
+	
+	//MÉTODO PARA EXIBIR AS OPCOES DE MENU DO PACIENTE
 	public void menuPaciente() {
 		
 		this.linha(50);

@@ -40,6 +40,8 @@ public class Contato {
 		this.email = email;
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return  "Telefone: " + telefone + "\n"
